@@ -1,0 +1,24 @@
+﻿Feature,Dtype,Meaning and Role in Project
+mal_id,int64,The unique identification code for the manga on MyAnimeList. Used as the Primary Key and reference point.
+url,object,The URL to the MAL page.
+score,float64,The average score given to the manga. The Target Variable for Regression models (predicting score) and Classification models (predicting High-Score/Low-Score).
+scored,float64,The scored value (often the same as score).
+scored_by,float64,The number of users who rated the manga. Used to assess the credibility of the score.
+rank,float64,The manga's ranking based on its score. Supplementary feature or an alternative target variable.
+popularity,int64,The popularity rank (based on members). Feature for regression modeling.
+members,int64,The total number of users who have added the title to their list. Popularity indicator. A crucial feature for the model.
+favorites,int64,The number of users who have marked the title as a favorite. Indicator of Subjective Quality or engagement.
+synopsis,object,The plot summary of the manga. Core feature for Content-Based Filtering (requires TF-IDF or Embedding Vectorization).
+genres,object,The list of genres (nested/List of Dictionaries). Core feature for Content-Based Filtering (requires flattening and One-Hot Encoding).
+explicit_genres,object,Adult/explicit genre tags. Categorical feature.
+themes,object,"Secondary themes (e.g., School, Harem). More detailed categorical feature."
+demographics,object,"Target audience (e.g., Shounen, Shoujo). Important categorical feature.a"
+type,object,"Publication type (Manga, One-shot, Doujinshi, etc.). Categorical feature."
+chapters,float64,Total number of chapters. Length feature.
+volumes,float64,Total number of volumes. Length feature.
+status,object,"Publishing status (Publishing, Finished, etc.). Feature used to create the is_ongoing boolean flag."
+authors,object,List of authors (nested). Content feature (author/studio influence).
+serializations,object,Magazine/publication source. Categorical feature (influences style/audience).
+"titles, title_english, title_japanese, title_synonyms",object,Title variations. Used for searching and lookup only.
+"images, published, background",object,Detailed information not typically needed for initial modeling.
+"approved, publishing",bool,Boolean status flags. Simple categorical/binary features.

@@ -12,9 +12,9 @@ pip install pandas numpy scikit-learn streamlit
 ```
 Train:
 ``` bash
-python "content_based_filtering/train.py"
+python content_based_filtering/train.py
 ```
 Deploy: 
 ```bash
-streamlit run "content_based_filtering/app.py"
+streamlit run content_based_filtering/app.py
 ```

@@ -3,7 +3,6 @@ Scrape and collect anime/manga data using MAL API / Jikan API
 And this is only for studying purpose, without using direct automation web broswer to illegally scrape data.
 # Not for commercial or any other illegal purposes.
 
-
 ---
 
 # Manga Recommendation System 
@@ -86,3 +85,21 @@ Retrieval: Sử dụng ChromaDB để truy vấn vector và thuật toán Hybrid
 2. Nguyễn Văn Hậu - 21120449: EDA, xây dựng model Content-based Filtering
 3. Nguyễn Trung Dũng - 21120228 & EDA, xây dựng Model RAG + Semantic Search, ChromaDB
 4. Ngô Gia Long - 20120525: Code Giao diện Streamlit, Slide
+```
+# Abuot the data set 
+
+# Installation 
+## For content based model
+Install requirements: 
+```bash
+pip install pandas numpy scikit-learn streamlit
+```
+Train:
+``` bash
+python content_based_filtering/train.py
+```
+Deploy: 
+```bash
+streamlit run content_based_filtering/app.py
+```
+

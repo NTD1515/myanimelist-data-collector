@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+manga_chroma_db_vn/
+manga_chroma_db/
+models/
+manga_chroma_db_vn/
+manga_chroma_db/
+models/
+*.pkl
+*.bin
